@@ -20,9 +20,7 @@ EPISODE_SCHEMA = {
         "accessibility": {"type": "object"},
         "distribution": {"type": "object"},
     },
-    "required": [
-        "id", "title", "leetcodeSlug", "difficulty", "pattern", "objectives"
-    ],
+    "required": ["id", "title", "leetcodeSlug", "difficulty", "pattern", "objectives"],
 }
 
 

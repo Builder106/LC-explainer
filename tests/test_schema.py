@@ -11,9 +11,7 @@ VALID_EPISODE = {
     "difficulty": "Easy",
     "pattern": ["hash-map"],
     "objectives": ["Recognize complement pairs"],
-    "recognitionCues": [
-        "Look for pairs summing to target"
-    ],
+    "recognitionCues": ["Look for pairs summing to target"],
     "approaches": [{"name": "Hash Map", "intuition": "Store seen values"}],
     "codeSnippets": [],
     "storyboard": [],
