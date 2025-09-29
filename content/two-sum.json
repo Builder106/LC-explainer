@@ -1,0 +1,29 @@
+
+{
+  "id": "two-sum",
+  "title": "Two Sum",
+  "leetcodeSlug": "two-sum",
+  "difficulty": "Easy",
+  "pattern": ["hash-map"],
+  "objectives": ["Recognize when value-pair problems map to complements"],
+  "recognitionCues": ["Ask: can I store prior info to find complement?"],
+  "approaches": [
+    {
+      "name": "Hash Map",
+      "intuition": "Use a map to store numbers and their indices",
+      "complexity": "O(n) time, O(n) space",
+      "whenToUse": "When finding pairs with a specific sum"
+    }
+  ],
+  "codeSnippets": [],
+  "storyboard": [],
+  "quizzes": [],
+  "accessibility": {
+    "captions": "auto-generated",
+    "transcript": "available"
+  },
+  "distribution": {
+    "title": "Two Sum Explained | LeetCode Pattern",
+    "description": "Learn the hash map pattern for Two Sum..."
+  }
+}
