@@ -7,11 +7,12 @@ This document outlines the development roadmap for building a code-driven, facel
 
 ### 1.1 Project Setup & Schema Foundation
 - [ ] Initialize monorepo structure (`packages/`, `content/`, `infrastructure/`)
-- [ ] Set up TypeScript/Node.js project with ESLint, Prettier
+- [ ] Set up Python project with virtualenv, black, flake8 (for custom library)
 - [ ] Create JSON Schema for content model (episode metadata, storyboard, quizzes)
 - [ ] Write schema validation tests (required fields, invalid combinations)
 - [ ] Implement CLI tool for schema validation
 - [ ] Set up Git hooks for schema validation on content changes
+- [ ] Create `docs/RISKS.md` and `docs/QA.md` for risk assessment and testing strategies
 
 ### 1.2 Content Management System
 - [ ] Create content directory structure with Markdown + front matter format
@@ -28,6 +29,7 @@ This document outlines the development roadmap for building a code-driven, facel
 - [ ] Write library setup tests (e.g., scene instantiation, basic rendering without errors)
 - [ ] Implement timing system (TTS segments drive scene durations via `run_time` parameters)
 - [ ] Write renderer tests for timing alignment and animation state management
+- [ ] Run initial performance and accessibility tests on base library
 
 ### 1.4 Text-to-Speech Integration
 - [ ] Integrate Google Cloud TTS (WaveNet/Neural2) with fallback options
