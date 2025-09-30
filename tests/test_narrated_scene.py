@@ -2,7 +2,7 @@ from packages.animations.scenes.narrated_scene import NarratedStackScene
 
 
 def test_narrated_stack_scene_construct():
-    """Test NarratedStackScene construction with TTS."""
+    """Test NarratedStackScene construction with TTS and captions."""
     episode_data = {"id": "test-narrated", "title": "Narrated Stack"}
     scene = NarratedStackScene(episode_data)
     scene.construct()
