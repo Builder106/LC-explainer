@@ -45,9 +45,9 @@ This document outlines the development roadmap for building a code-driven, facel
 
 ### 1.6 Thumbnail Generation
 - [x] Set up thumbnail generator structure (inspired by Gemini image gen)
-- [ ] Build thumbnail generator from episode metadata using Pillow/Cairo
-- [ ] Implement dynamic text overlays and branding (e.g., problem title, difficulty)
-- [ ] Write thumbnail tests for consistency and branding compliance
+- [x] Build thumbnail generator from episode metadata using Pillow/Cairo
+- [x] Implement dynamic text overlays and branding (e.g., problem title, difficulty)
+- [x] Write thumbnail tests for consistency and branding compliance
 
 ### 1.7 Basic Animation Library (Using Custom Library)
 - [ ] Implement Stack scene with push/pop animations (extend `LeetCodeScene`)
