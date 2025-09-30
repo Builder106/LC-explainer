@@ -18,7 +18,5 @@ def test_animations_subdirs_exist():
     subdirs = ["scenes", "mobjects", "utils"]
     for subdir in subdirs:
         subdir_path = os.path.join(base_path, subdir)
-        assert os.path.exists(subdir_path), (
-            f"Subdirectory {subdir} does not exist"
-        )
+        assert os.path.exists(subdir_path), f"Subdirectory {subdir} does not exist"
         assert os.path.isdir(subdir_path), f"{subdir} is not a directory"

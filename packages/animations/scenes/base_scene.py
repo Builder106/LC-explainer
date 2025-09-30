@@ -5,9 +5,7 @@ from ..mobjects.base import Mobject
 class LeetCodeScene:
     """Base class for LeetCode animation scenes, inspired by Manim's Scene."""
 
-    def __init__(
-        self, episode_data: Dict[str, Any], theme: Dict[str, Any] = None
-    ):
+    def __init__(self, episode_data: Dict[str, Any], theme: Dict[str, Any] = None):
         self.episode_data = episode_data
         self.theme = theme or {}
         self.mobjects: List[Mobject] = []
