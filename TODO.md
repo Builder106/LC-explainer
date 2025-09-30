@@ -6,42 +6,42 @@ This document outlines the development roadmap for building a code-driven, facel
 ## Phase 1: MVP (2-3 weeks) - Core Infrastructure
 
 ### 1.1 Project Setup & Schema Foundation
-- [ ] Initialize monorepo structure (`packages/`, `content/`, `infrastructure/`)
-- [ ] Set up Python project with virtualenv, black, flake8 (for custom library)
-- [ ] Create JSON Schema for content model (episode metadata, storyboard, quizzes)
-- [ ] Write schema validation tests (required fields, invalid combinations)
-- [ ] Implement CLI tool for schema validation
-- [ ] Set up Git hooks for schema validation on content changes
-- [ ] Create `docs/RISKS.md` and `docs/QA.md` for risk assessment and testing strategies
+- [x] Initialize monorepo structure (`packages/`, `content/`, `infrastructure/`)
+- [x] Set up Python project with virtualenv, black, flake8 (for custom library)
+- [x] Create JSON Schema for content model (episode metadata, storyboard, quizzes)
+- [x] Write schema validation tests (required fields, invalid combinations)
+- [x] Implement CLI tool for schema validation
+- [x] Set up Git hooks for schema validation on content changes
+- [x] Create `docs/RISKS.md` and `docs/QA.md` for risk assessment and testing strategies
 
 ### 1.2 Content Management System
-- [ ] Create content directory structure with Markdown + front matter format
-- [ ] Implement front matter parser and content loader
-- [ ] Write round-trip stability tests (authoring → JSON → render → JSON unchanged)
-- [ ] Build basic content authoring utilities
-- [ ] Create sample episode content files with all required fields
+- [x] Create content directory structure with Markdown + front matter format
+- [x] Implement front matter parser and content loader
+- [x] Write round-trip stability tests (authoring → JSON → render → JSON unchanged)
+- [x] Build basic content authoring utilities
+- [x] Create sample episode content files with all required fields
 
 ### 1.3 Custom Animation Library Setup (Inspired by Manim)
-- [ ] Set up Python-based animation library project structure (`packages/animations/`)
-- [ ] Configure FFmpeg integration for video rendering
-- [ ] Create base `LeetCodeScene` class with `construct()` method for declarative animations
-- [ ] Implement core Mobject classes (e.g., `DataItem`, `Stack`, `Queue`) with styling and theming
-- [ ] Write library setup tests (e.g., scene instantiation, basic rendering without errors)
-- [ ] Implement timing system (TTS segments drive scene durations via `run_time` parameters)
-- [ ] Write renderer tests for timing alignment and animation state management
-- [ ] Run initial performance and accessibility tests on base library
+- [x] Set up Python-based animation library project structure (`packages/animations/`)
+- [x] Configure FFmpeg integration for video rendering
+- [x] Create base `LeetCodeScene` class with `construct()` method for declarative animations
+- [x] Implement core Mobject classes (e.g., `DataItem`, `Stack`, `Queue`) with styling and theming
+- [x] Write library setup tests (e.g., scene instantiation, basic rendering without errors)
+- [x] Implement timing system (TTS segments drive scene durations via `run_time` parameters)
+- [x] Write renderer tests for timing alignment and animation state management
+- [x] Run initial performance and accessibility tests on base library
 
 ### 1.4 Text-to-Speech Integration
-- [ ] Integrate Google Cloud TTS (WaveNet/Neural2) with fallback options
-- [ ] Implement TTS segment generation and caching
-- [ ] Create audio track with BGM ducking
-- [ ] Write TTS timing tests (sum of scene durations ≈ sum of TTS segments)
+- [x] Integrate Google Cloud TTS (WaveNet/Neural2) with fallback options
+- [x] Implement TTS segment generation and caching
+- [x] Create audio track with BGM ducking
+- [x] Write TTS timing tests (sum of scene durations ≈ sum of TTS segments)
 
 ### 1.5 Caption & Accessibility System
-- [ ] Implement auto-captioning from TTS output
-- [ ] Generate SRT/WebVTT caption files
-- [ ] Write caption validation tests (valid format, within bounds)
-- [ ] Create transcript export functionality
+- [x] Implement auto-captioning from TTS output
+- [x] Generate SRT/WebVTT caption files
+- [x] Write caption validation tests (valid format, within bounds)
+- [x] Create transcript export functionality
 
 ### 1.6 Thumbnail Generation
 - [x] Set up thumbnail generator structure (inspired by Gemini image gen)
