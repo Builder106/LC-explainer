@@ -55,13 +55,13 @@ This document outlines the development roadmap for building a code-driven, facel
 - [x] Build Deque scene with front/back operations (add monotonic deque logic)
 - [x] Write animation reducer tests for deterministic state changes after each operation
 - [x] Test animation timing (no overlapping animations; durations match TTS segments)
-- [ ] Integrate library scenes with JSON storyboard data for dynamic rendering
+- [x] Integrate library scenes with JSON storyboard data for dynamic rendering
 - [ ] Add theming and styling (e.g., colors, fonts from `docs/BRANDING.md`)
 
 ### 1.8 Distribution & Publishing
-- [ ] Implement deep link generation and validation
-- [ ] Create YouTube description/chapter generator
-- [ ] Write distribution tests (chapters increasing, deep links present)
+- [x] Implement deep link generation and validation
+- [x] Create YouTube description/chapter generator
+- [x] Write distribution tests (chapters increasing, deep links present)
 - [ ] Build manual upload workflow
 - [ ] Set up basic analytics import system
 
@@ -73,12 +73,15 @@ This document outlines the development roadmap for building a code-driven, facel
 - [ ] Implement content validation and error feedback
 - [ ] Build preview system with Remotion player integration
 
-### 2.2 AI-Assisted Content Creation
-- [ ] Integrate Google Gemini API for content drafting
-- [ ] Implement script outline generation from objectives
-- [ ] Create quiz generation with answer validation
-- [ ] Build recognition cues suggestion system
-- [ ] Write LLM integration tests with prompt guardrails
+### 2.2 AI-Assisted Content Creation (Gemini Integration)
+- [ ] Set up Gemini API client with safety settings and thinking mode
+- [ ] Implement pseudo-LeetCode interface for problem fetching and simulation
+- [ ] Build UMPIRE method integration (Understand, Match, Plan, Implement, Review, Evaluate)
+- [ ] Create script outline generation from objectives using structured output
+- [ ] Generate code with comments and explanations via Gemini
+- [ ] Implement quiz generation with answer validation and rationale
+- [ ] Build recognition cues suggestion system based on patterns
+- [ ] Write LLM integration tests with prompt guardrails and video understanding
 
 ### 2.3 Advanced Pattern Diagrams (Extend Custom Library)
 - [ ] Implement Two Pointers/Sliding Window scenes with pointer movement and window animations
