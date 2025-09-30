@@ -50,11 +50,11 @@ This document outlines the development roadmap for building a code-driven, facel
 - [x] Write thumbnail tests for consistency and branding compliance
 
 ### 1.7 Basic Animation Library (Using Custom Library)
-- [ ] Implement Stack scene with push/pop animations (extend `LeetCodeScene`)
-- [ ] Create Queue scene with enqueue/dequeue operations (include circular queue variant)
-- [ ] Build Deque scene with front/back operations (add monotonic deque logic)
-- [ ] Write animation reducer tests for deterministic state changes after each operation
-- [ ] Test animation timing (no overlapping animations; durations match TTS segments)
+- [x] Implement Stack scene with push/pop animations (extend `LeetCodeScene`)
+- [x] Create Queue scene with enqueue/dequeue operations (include circular queue variant)
+- [x] Build Deque scene with front/back operations (add monotonic deque logic)
+- [x] Write animation reducer tests for deterministic state changes after each operation
+- [x] Test animation timing (no overlapping animations; durations match TTS segments)
 - [ ] Integrate library scenes with JSON storyboard data for dynamic rendering
 - [ ] Add theming and styling (e.g., colors, fonts from `docs/BRANDING.md`)
 
