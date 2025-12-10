@@ -1,0 +1,26 @@
+{
+  "name": "video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "remotion preview src/index.ts",
+    "build": "remotion render src/index.ts HelloWorld out/video.mp4",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx && tsc"
+  },
+  "dependencies": {
+    "remotion": "4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.0",
+    "@types/react": "^18.2.0",
+    "@types/web": "^0.0.116",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "prettier": "^3.2.4"
+  }
+}
+

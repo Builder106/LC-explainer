@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Interactive LeetCode Explainer",
+  "version": "1.0.0",
+  "description": "Integrates interactive explainer videos and code editor into LeetCode problems.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LeetCode Explainer"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "editor.html",
+        "canvas-renderer.js",
+        "algorithm-detector.js",
+        "llm-generator.js",
+        "visualization-elements.js",
+        "index.js"
+      ],
+      "matches": ["https://leetcode.com/*"]
+    }
+  ]
+}

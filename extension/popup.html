@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeetCode Explainer</title>
+  <style>
+    body {
+      width: 350px;
+      padding: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8f9fa;
+    }
+
+    .container {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 16px;
+      font-weight: normal;
+    }
+
+    .section {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .api-key-section {
+      background: #fff3cd;
+      border: 1px solid #ffeaa7;
+      border-radius: 6px;
+      padding: 12px;
+    }
+
+    .api-key-input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: monospace;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+    }
+
+    .api-key-input:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+    }
+
+    .button-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background-color: #545b62;
+    }
+
+    .btn-success {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .btn-success:hover {
+      background-color: #1e7e34;
+    }
+
+    .status-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      margin-top: 4px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .status-dot.connected {
+      background-color: #28a745;
+    }
+
+    .status-dot.disconnected {
+      background-color: #dc3545;
+    }
+
+    .info-text {
+      font-size: 11px;
+      color: #666;
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+
+    .main-button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 8px;
+    }
+
+    .main-button:hover {
+      background-color: #0056b3;
+    }
+
+    .main-button:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <span>🎯</span>
+      LeetCode Explainer
+    </h1>
+    <p class="subtitle">Interactive videos and AI-powered code analysis</p>
+
+    <!-- API Key Configuration Section -->
+    <div class="section api-key-section">
+      <h3 style="font-size: 14px; margin-bottom: 8px; color: #856404;">
+        🔑 Gemini API Configuration
+      </h3>
+
+      <input
+        type="password"
+        id="api-key-input"
+        class="api-key-input"
+        placeholder="Enter your Google AI Studio API key..."
+      >
+
+      <div class="button-group">
+        <button id="save-api-key" class="btn btn-success">Save</button>
+        <button id="clear-api-key" class="btn btn-secondary">Clear</button>
+      </div>
+
+      <div id="api-key-status" class="status-indicator">
+        <div id="status-dot" class="status-dot disconnected"></div>
+        <span id="status-text">API key not configured</span>
+      </div>
+
+      <div class="info-text">
+        Get your API key from <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: #007bff;">Google AI Studio</a>.
+        Your key is stored securely in your browser.
+      </div>
+    </div>
+
+    <!-- Main Action Section -->
+    <div class="section">
+      <button id="open-editor" class="main-button" disabled>
+        🚀 Open Interactive Explainer
+      </button>
+      <p style="font-size: 11px; color: #666; margin-top: 8px;">
+        Configure your API key above to enable AI-powered features
+      </p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
